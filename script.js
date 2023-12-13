@@ -78,7 +78,7 @@ play.addEventListener('click', () => {
 
 document.getElementById("reset").addEventListener("click",()=>{
     document.getElementById("reset").style.transform = "rotate(360deg)";
-    document.getElementById("reset").style.transition = "all 0.5s ease-in-out";
+    document.getElementById("reset").style.transition = "all 0.8s ease-in-out";
     clearInterval(t);
     seconds = 0;
     minutes = 0;
