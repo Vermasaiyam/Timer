@@ -34,25 +34,25 @@ const timer = () => {
         d = "0" + days;
     }
     else {
-        d++;
+        d = days;
     }
     if (hours < 10) {
         h = "0" + hours;
     }
     else {
-        h++;
+        h = hours;
     }
     if (minutes < 10) {
         m = "0" + minutes;
     }
     else {
-        m++;
+        m = minutes;
     }
     if (seconds < 10) {
         s = "0" + seconds;
     }
     else {
-        s++;
+        s = seconds;
     }
 
     document.getElementById("days").value = d;
@@ -89,7 +89,7 @@ document.getElementById("reset").addEventListener("click",()=>{
     document.getElementById("hours").value = "00";
     document.getElementById("minutes").value = "00";
     document.getElementById("seconds").value = "00";
-    
+
     play.classList.remove("fa-pause");
     play.classList.add("fa-play");
     start = false;
